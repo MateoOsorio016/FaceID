@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .row1{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+header .imageLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header .imageLogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .menu{
+    display: flex;
+    align-items: center;
+}
+
+header .menu ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+
+header .menu ul li a{
+    text-decoration: none;
+    color: #9F212F;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    padding: 0 1rem;
+    position: relative;
+}
+
+header .menu ul li a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #9F212F;
+    transition: all 0.3s ease;
+}
+
+header .menu ul li a:hover:after{
+    width: 100%;
+}
+
+header .menu ul li.active a{
+    color: #9F212F;
+    background: #D6CAB0;
+    padding: 0 1rem;
+    border-radius: 5px;
+}
+
+header .menu ul li.active a:after{
+    width: 0;
+}
+
+header .menu ul li.active a:hover:after{
+    width: 0;
+}
+
+header .actions{
+    display: flex;
+    align-items: center;
+}
+
+header .actions .icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+header .actions .icons .icon{
+    font-size: 1.5rem;
+    color: #9F212F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header .row2{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #D6CAB0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+header .row2 p{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #9F212F;
+}
+
+main .banner {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+main .products h2{
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.375rem;
+    text-transform: uppercase;
+}
+
+main .products .cardsContainer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+    padding: 0 18rem;
+}
+
+main .products .card{
+    width: 100%;
+    max-width: 18rem;
+    height: 30rem;
+    border: 2px solid #D6CAB0;
+    background: #FAF6EF;
+    position: relative;
+}
+
+main .products .card .imgContainer{
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .products .card .favoriteIcon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #9F212F;
+}
+
+main .products .card .imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .products .card .infoProduct{
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.19rem 1.75rem 2.19rem;
+}
+
+main .products .card .infoProduct h4{
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+main .products .card .infoProduct .price{
+    color: #9F212F;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+main .products .card .infoProduct button{
+    width: 100%;
+    height: 3rem;
+    background: none;
+    color: #9F212F;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    border-radius: 0.625rem;
+    border: 2px solid #9F212F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .products .card .infoProduct .btn:hover{
+    background-color: #9F212F;
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 33.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D6CAB0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+footer .row1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+
+footer .row1 .col{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .row1 .col h3{
+    color: #9F212F;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.15625rem;
+    text-transform: uppercase;
+}
+
+footer .row1 .col ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: .5rem;
+}
+
+footer .row1 .col ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem; /* 200% */
+    letter-spacing: 0.1rem;
+}
+
+footer .row1 .col button{
+    width: 100%;
+    height: 3rem;
+    background: none;
+    color: #9F212F;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.15625rem;
+    text-transform: uppercase;
+    border-radius: 0.625rem;
+    border: 2px solid #9F212F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer .row1 .col button:hover{
+    background-color: #9F212F;
+    color: #fff;
+}
+
+
+.modalContainer{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modalContainer.active{
+    display: flex;
+}
+
+.modal{
+    width: 72rem;
+    height: 46.875rem;
+    background-color: #fff;
+    border-radius: 1.5625rem;
+    display: flex;
+    position: relative;
+}
+
+.modal .col{
+    width: 50%;
+    height: 100%;
+}
+
+.modal .col.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 3.75rem;
+}
+
+.modal .col.info p{
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+}
+
+.modal .col.info a{
+    color: #9F212F;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    text-decoration: none;
+}
+
+.modal .col.info a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #9F212F;
+    transition: all 0.3s ease;
+}
+
+.modal .col.info a:hover:after{
+    width: 100%;
+}
+
+.modal .col h3{
+    color: #000;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.26563rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 3.75rem;
+}
+
+.inputControler{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.inputControler input{
+    width: 100%;
+    height: 3rem;
+    border: 2px solid #D6CAB0;
+    border-radius: 0.625rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+.inputControler label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    color: #D6CAB0;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    background: #fff;
+    padding: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.inputControler input:focus{
+    border-color: #9F212F;
+}
+
+.inputControler input::placeholder{
+    color: transparent;
+}
+
+.inputControler input:focus + label{
+    top: -.5rem;
+    transform: translateY(0);
+    font-size: 0.8rem;
+    color: #9F212F;
+}
+
+.inputControler input:not(:placeholder-shown):not(:focus) ~ label{
+    top: -.5rem;
+    transform: translateY(0);
+    font-size: 0.8rem;
+    color: #D6CAB0;
+}
+
+form button{
+    width: 100%;
+    height: 3rem;
+    background: none;
+    color: #9F212F;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.15625rem;
+    text-transform: uppercase;
+    border-radius: 0.625rem;
+    border: 2px solid #9F212F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background-color: #9F212F;
+    color: #fff;
+}
+
+.closeModal{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #9F212F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.closeModal:hover{
+    transform: rotate(90deg);
+}
